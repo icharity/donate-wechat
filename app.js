@@ -25,26 +25,29 @@ res.reply([
         res.reply([
             {
                 title: '我要捐',
-                description: '我要捐',
-                picurl: 'http://weixin.phodal.com/avatar.jpg',
+                description: '朋友，还在为如何处理你满桌的旧书和满柜的旧衣服而烦恼吗？' +
+                            '那么，请交给我们吧！我们会给它们一个完美的归宿。',
+                picurl: 'http://weixin.phodal.com/i_want_donate.jpeg',
                 url: 'http://nx2.phodal.com/create'
             },
             {
                 title: '我需要',
-                description: '我需要',
-                picurl: 'http://weixin.phodal.com/avatar.jpg',
+                description: '朋友，还在为发现需要捐赠的地区而无处寻求帮助而烦恼吗？' +
+                            '那么，请交给我们吧！我们会帮他们找到一大波热心人。',
+                picurl: 'http://weixin.phodal.com/i_need_donation.jpeg',
                 url: 'http://nx2.phodal.com/need'
             },
             {
                 title: '已捐赠',
-                description: '已捐赠',
-                picurl: 'http://weixin.phodal.com/avatar.jpg',
-                url: 'http://nx2.phodal.com/search-needs'
+                description: '朋友，让我们来看看身边的活雷锋吧！',
+                picurl: 'http://weixin.phodal.com/already_donated.jpeg',
+                url: 'http://nx2.phodal.com/view'
             },
             {
-                title: '搜索',
-                description: '搜索',
-                picurl: 'http://weixin.phodal.com/avatar.jpg',
+                title: '谁需要',
+                description: '朋友，还在为无处奉献爱心而烦恼吗？' +
+                        '那么，请交给我们吧！这里有真正需要帮助的人。',
+                picurl: 'http://weixin.phodal.com/search_needs.jpeg',
                 url: 'http://nx2.phodal.com/search-needs'
             }
         ]);
