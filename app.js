@@ -12,24 +12,15 @@ app.use(express.query());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/weixin', wechat(config, function (req, res, next) {
     var message = req.weixin;
-    if (message.FromUserName === 'diaosi') {
-        res.reply('hehe');
-    } else if (message.FromUserName === 'text') {
-        res.reply({
-            content: 'text object',
-            type: 'text'
-        });
-    } else if (message.FromUserName === 'hehe') {
-        res.reply({
-            type: "music",
-            content: {
-                title: "来段音乐吧",
-                description: "一无所有",
-                musicUrl: "http://mp3.com/xx.mp3",
-                hqMusicUrl: "http://mp3.com/xx.mp3",
-                thumbMediaId: "thisThumbMediaId"
-            }
-        });
+    console.log(message);
+    if (message.Content === '我要捐') {
+res.reply([
+            {
+                title: '我要捐',
+                description: '我要捐',
+                picurl: 'http://weixin.phodal.com/avatar.jpg',
+                url: 'http://nx2.phodal.com/create'
+            }])
     } else {
         res.reply([
             {
