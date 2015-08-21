@@ -26,10 +26,10 @@ app.use('/weixin', wechat(config, function (req, res, next) {
         res.reply([
             {
                 title: '我需要',
-                description: '朋友，还在为如何处理你满桌的旧书和满柜的旧衣服而烦恼吗？' +
-                '那么，请交给我们吧！我们会给它们一个完美的归宿。',
-                picurl: 'http://weixin.phodal.com/avatar.jpg',
-                url: 'http://nx2.phodal.com/create'
+                description: '朋友，还在为发现需要捐赠的地区而无处寻求帮助而烦恼吗？' +
+                '那么，请交给我们吧！我们会帮他们找到一大波热心人。',
+                picurl: 'http://weixin.phodal.com/i_need_donation.jpeg',
+                url: 'http://nx2.phodal.com/need'
             }])
     } else if (message.Content === '已捐赠') {
         res.reply([
